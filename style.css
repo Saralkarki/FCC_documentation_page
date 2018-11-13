@@ -1,0 +1,121 @@
+body
+{
+  margin: 0;
+}
+
+#title
+{
+  text-align:center;
+  padding: 20px 60px 20px 5px;
+}
+
+#main-doc
+{
+  background-color: white; 
+  display: flex;
+  
+}
+#navbar
+{
+  position: fixed;
+  width: 25%; 
+  margin-left: -15px;
+  overflow: scroll;
+  
+}
+#navbar li:first-child
+{
+/*   margin-left:-20px; */
+  width: 100%;
+  border-top: 3px solid black;
+  padding: 2px;
+}
+#navbar li:last-child {
+border-bottom: 3px solid black;
+}
+#navbar li:hover{
+  background-color: grey;
+  
+}
+.nav-link
+{
+  margin-left: 30px;
+  color: black;
+}
+.nav-link:hover
+{
+  color:white;
+}
+
+.main-section
+{
+  margin : 20px 15px 10px 15px;
+  text-align: justify;
+  
+}
+#content{  
+  border-left: 2px solid black;
+  opacity: 1;
+}
+
+ul
+{
+  list-style: none;
+  margin:-20px; 
+}
+
+
+.first
+{
+  margin: 10px;
+ 
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+  #navbar
+  {
+    display:block;
+    width: 800px;
+    height: 400px;
+    position:relative;
+    overflow: scroll;
+   
+  }
+ 
+  #main-doc{
+    display:block;
+  }
+  #content
+  {
+/*     display:block; */
+    margin-top:10px;
+  }  
+  #title
+  {
+    margin-right:200px;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+#title
+  {
+    margin-right:500px;
+    font-size: 20px;
+  }
+.nav-link
+  {
+    font-size:14px;
+  }
+#navbar
+  {
+    height: 30vh;
+    overflow: scroll;
+/*     overflow-y: scroll !important; */
+  }
+ 
+}

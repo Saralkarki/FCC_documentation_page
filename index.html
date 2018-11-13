@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- <link rel = "stylesheet" href = "css/style.css"   -->
+<title> Getting Started With C </title>
+  </head>
+ <body>
+   
+<!--  This is where the menu goes     -->
+  
+   <main id = "main-doc">       
+   <div class="col-sm-3"> 
+   
+       <nav id ="navbar">
+         
+        <header>  <h3 id="title">C- Programming </h3></header>
+         <ul>
+           <li class = "list"><a href ="#Introduction"  class = "nav-link"> Introduction </a></li>
+         <li><a href ="#Data_Types" class = "nav-link"> Data Types </a></li>
+          <li><a href ="#Input_and_Output" class = "nav-link" >Input and Output </a></li>
+            <li><a href ="#Operators" class = "nav-link" >Operators</a></li>
+           <li><a href ="#Condition" class = "nav-link" >Condition</a></li>
+           
+           <li><a href ="#Loop" class = "nav-link" >Loop</a></li>
+             <li><a href ="#Functions" class = "nav-link">Functions</a></li>
+        
+          
+           <li><a href ="#Arrays" class = "nav-link" >Arrays</a></li>
+           <li><a href ="#Structures" class = "nav-link" >Structures</a></li>
+           <li><a href ="#Pointers" class = "nav-link" >Pointers</a></li>
+           <li><a href ="#Learn_More" class = "nav-link" >Learn More</a></li>
+          
+          
+         </ul>
+     </nav>
+       </div>
+        
+      <div id ="content" class="col-sm-9" style="background-color: white;">
+     <section class="main-section" id = "Introduction"> 
+       <header><h1> Introduction </h1> </header> 
+       <p class="text-justify"> C was developed by Dennis Ritche between 1969 and 1973. Initiallly it was developed as a  system programming language. In other words it was a programming language devised to write operating system. </p>
+       <p>The features of C languages are </p>
+      <p> <li> low-level access to memory
+         <li> Simple set of keywords
+        <li> It has a clean style.</p>
+  <p class="text-justify">    Languages developed later on have borrowed syntax and features directly or indirecrly from C. Syntaxes on languages such as Java, PHP , Javascript are based on C language. 
+         </p>
+       <p class = "text-justify"> Writing our first program: </p>
+<!-- Use of escapes from https://www.freeformatter.com/html-escape.html#ad-output        -->   
+       <div class = "ex1_line1"> <code class = "first"> #include &lt;stdio.h&gt; </code> </div>
+       <div class = "ex1_line2"> <code class= "first">  int main (void)  </code> </div>
+        <div class = "ex1_line3"> <code class= "first"> { </code> </div>
+       <div class = "ex1_line4"> <code class= "first">&nbsp;&nbsp;&nbsp; printf("Hello World");</code></div>
+       <div class = "ex1_line5"> <code class = "first"> }</code></div>
+       
+       <p class="text-justify"> <quote>Now that we have seen how we can write our first program, let us explore the concept in detial. </quote>    
+      
+        </section>
+<!-- End of Introduction section         -->
+        <section class="main-section" id = "Data_Types"><header> <h1>
+          Data Types </h1></header> 
+          <p>What are data types?</p>
+          <p><i>"In computer science and computer programming, a data type or simply type is a classification of data which tells the compiler or interpreter how the programmer intends to use the data. Most programming languages support various types of data, for example: real, integer or Boolean. A data type provides a set of values from which an expression (i.e. variable, function...) may take its values. This data type defines the operations that can be done on the data, the meaning of the data, and the way values of that type can be stored. A type of value from which an expression may take its value."</i><sup><a href="http://foldoc.org/type">1 </a><alt=" Shaffer, C. A. (2011). Data Structures & Algorithm Analysis in C++ (3rd ed.). Mineola, NY: Dover. 1.2. ISBN 978-0-486-48582-9.
+">2<sup></p>
+            
+            Each variable in C has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it. Let us briefly describe them one by one: </quote></p>
+
+          <p class="text-justify"><quote>Following are the examples of some very common data types used in C:</quote> </p>
+
+<p class="text-justify"><quote> <li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li> </quote></p>
+       <p class="text-justify"> <quote> <li>int: As the name suggests, an int variable is used to store an integer.</li></quote></p>
+<p class="text-justify"><li> <quote> float: It is used to store decimal numbers (numbers with floating point value) with single precision. </quote>  </li></p>
+<p class="text-justify"><li> <quote> double: It is used to store decimal numbers (numbers with floating point value) with double precision.</li> </quote>  </p>
+
+<p> <quote> Different data types also have different ranges upto which they can store numbers. These ranges may vary from compiler to compiler. Below is list of ranges along with the memory requirement and format specifiers on 32 bit gcc compiler.
+   </quote> </li> </p>
+              </section>
+   
+<!--  End of Data type section   -->
+   <section class="main-section" id ="Input_and_Output"><header> <h1>Input and Output </h1></header>
+     <p class = "text-justify"> 
+         <quote> What values do the printf() and scanf() functions return ?  </quote> </p>
+
+<p class="text-justify"><li> <quote> printf() : It returns total number of Characters Printed, Or negative value if an output error or an encoding error  </quote> </li></p>
+<p class="text-justify"> Example 1: The printf() function in the code written below returns hello world to the sceen.</p>
+     
+    
+       <div class = "ex1_line1"> <code class = "first">1 &nbsp;&nbsp; #include &lt;stdio.h&gt; </code> </div>
+       <div class = "ex1_line2"> <code class= "first">2 &nbsp;&nbsp;  int main (void)  </code> </div>
+        <div class = "ex1_line3"> <code class= "first">3&nbsp;&nbsp; { </code> </div>
+       <div class = "ex1_line4"> <code class= "first">4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Hello World");</code></div>
+       <div class = "ex1_line5"> <code class = "first">5&nbsp;&nbsp; }</code></div>
+       
+     <p> We have already seen this example in the introduction. But now let us break it down and look what is going on </p>
+  <ol>   <p> <li> In line 1, we are including the standard Input Output Library. This library contains the necessary input/output functions. </p>
+<p> <li>we are initializing the main function in line 2. And since the function is taking no argument it is void.</li> </p>
+     <p><li> In line 4 we are printing hello world to the screen using printf function </li> </p> </ol>
+     
+     <p class="text-justify"><li>scanf() : It returns total number of Inputs Scanned successfully, or EOF if input failure occurs before the first receiving argument was assigned.</li> </p>
+     </p class="text-justify">Example 1: The first scanf() function in the code written takes in an integer. And printf() displays the integer on the screen</p>
+   
+       <div class = "ex1_line1"> <code class = "first">1 &nbsp;&nbsp; #include &lt;stdio.h&gt; </code> </div>
+       <div class = "ex1_line2"> <code class= "first">2 &nbsp;&nbsp;  int main (void)  </code> </div>
+        <div class = "ex1_line3"> <code class= "first">3&nbsp;&nbsp; { </code> </div>
+       <div class = "ex1_line4"> <code class= "first">4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Enter any integer: ");</code></div>
+      <div class = "ex1_line5"> <code class= "first">5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int n ;</code></div>
+     <div class = "ex1_line6"> <code class= "first">6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%i", &n);</code></div>
+     <div class = "ex1_line7"> <code class= "first">7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("The entered number is:  %i\n", n);</code></div>
+       <div class = "ex1_line8"> <code class = "first">8&nbsp;&nbsp; }</code></div>
+      
+        </section>
+<section class = "main-section" id = "Operators"><header> <h1>Operators</h1> 
+  </header>
+  <p>  <quote> C offers various types of operators having different functioning capabilities. </quote> 
+  </p>
+  <p><li>Arithmetic Operators </li></p>
+  <p>  <quote> Arithmetic Operators are used to performing mathematical calculations like addition (+), subtraction (-), multiplication (*), division (/) and modulus (%). </quote> </p>
+  
+  <p><li/>Relational Operators </p>
+  <p>  <quote> Relational operators are used to compare two quantities or values. </quote> </p>
+<p><li/>Logical Operators </p>
+  <p>  <quote> C provides three logical operators when we test more than one condition to make decisions. These are: && (meaning logical AND), || (meaning logical OR) and ! (meaning logical NOT). </quote> </p>
+<p><li/>Assignment Operators </p>
+  <p> <quote> Assignment operators applied to assign the result of an expression to a variable. C has a collection of shorthand assignment operators. </quote> 
+  </p>
+
+<p> <li/>Increment and Decrement Operators </p>
+  <p>  <quote> Increment and Decrement Operators are useful operators generally used to minimize the calculation, i.e. ++x & x++ means x=x+1 or -x & x−−means x=x-1. But there is a slight difference between ++ or −− written before or after the operand. Applying the pre-increment first add one to the operand and then the result is assigned to the variable on left whereas post-increment first assigns the value to the variable on the left and then increment the operand. </quote> </p>
+<p> <li/>Conditional Operator </p>
+  <p>  <quote> C offers a ternary operator which is the conditional operator (?: in combination) to construct conditional expressions. </quote>  </p>
+<p> <li/>Bitwise Operators </p>
+  <p>  <quote> C provides a special operator for bit operation between two variables. </quote> </p>
+<p> <li/>Special Operators </p>
+  <p>C supports some special operators</p>
+  
+  <p> For more information on Operators: <a href ="https://www.w3schools.in/c-tutorial/operators/"> Click here!!</a> </p>
+  </section>
+<section class = "main-section" id = "Condition"><header> <h1> Condition </h1> </header>
+    <p>  <quote> C conditional statements allow you to make a decision, based upon the result of a condition. These statements are called as Decision Making Statements or Conditional Statements.  </quote> </p>
+    <img src = "https://www.w3schools.in/wp-content/uploads/2014/07/c-if.png"
+         style="display:block; margin: 0 auto;">
+   <ol><li> If statement
+     <ul><li>if statement</li>
+       <li>if-else statement</li>
+       <li>Nested if-else statement</li>
+       <li>else if-statement</li>
+     </ul></li>
+     <li>goto statement</li>
+     <li>switch statement</li>
+     <li>Conditional Operator</li></ol>
+    
+    <p class="text-justify"> For more info <a href = "https://www.w3schools.in/c-tutorial/decision-making/"> Click here!!</a> </p>
+    </section>
+    <section class = "main-section" id = "Loop"><header> <h1> Loop </h1> </header>
+  <p> What is a Loop? </p>
+     <p> <quote> 
+       A computer is the most suitable machine to perform repetitive tasks and can tirelessly do a task tens of thousands of times. Every programming language has the feature to instruct to do such repetitive tasks with the help of certain form of statements. The process of repeatedly executing a collection of statement is called looping. The statements get executed many numbers of times based on the condition. But if the condition is given in such logic that the repetition continues any number of times with no fixed condition to stop looping those statements, then this type of looping is called infinite looping.  </quote> </p>
+      
+  <p>    C supports following types of loops: </p>
+      <ul><li> - while loops </li>
+        <li>- do while loops </li>
+        <li>- for loops</li> </ul>
+     <img src="https://www.w3schools.in/wp-content/uploads/2014/07/c-for.png" style="display: block; margin: 0 auto;">
+ <p> For more information on loop: <a href="https://www.w3schools.in/c-tutorial/loops/">
+   Click here! </a> </p>
+  </section>
+<section class = "main-section" id = "Functions"><header> <h1> Functions </h1> </header>
+  <p>  <quote> C function is a self-contained block of statements that can be executed repeatedly whenever we need it </quote>  </p>
+  <p> Benefits of C function </p>
+  <li> <quote> The function provides modularity. </quote> </li>
+<li> <quote> The function provides reusable code. </quote> 
+<li> <quote> In large programs, debugging and editing tasks is easy with the use of functions. </quote> 
+<li>The program can be modularized into smaller parts.
+<li> <quote> Separate function independently can be developed according to the needs. </quote> 
+  <p> Types of Functions </p>
+  <p> Built-in(Library) Functions</p>
+<p> <quote> The system provided these functions and stored in the library. Therefore it is also called Library Functions.</p>
+<p>e.g. scanf(), printf(), strcpy, strlwr, strcmp, strlen, strcat etc. </quote> 
+   <quote> To use these functions, you just need to include the appropriate C header files. </quote> </p>
+<p> <quote> User Defined Functions These functions are defined by the user at the time of writing the program. </quote> </p>
+<p>For more info on function <a href="https://www.w3schools.in/c-tutorial/functions/">
+  Click here! </a> </p>
+    </section>
+           
+  <section class="main-section" id = "Arrays"> <header> <h1>Arrays</h1> </header> 
+    <p> <quote> The array is a data structure in C programming, which can store a fixed-size sequential collection of elements of the same data type. </quote> </p>
+    <p>  <quote> For example, if you want to store ten numbers then instead of defining ten variables, it's easy to define an array of 10 lengths. </quote> </p>
+    <p> Syntax:</p>
+    <code> type arrayName [ size ]; </code>
+    <p>  <quote> This is called a one-dimensional array. An array type can be any valid C data types, and array size must be an integer constant greater than zero. </quote> </p>
+    <p> Example: </p>
+    <code> int age[5]; </code>
+    <code> age={22,25,30,32,35}; </code>
+
+    
+  </section>
+  <section class="main-section" id = "Structures"> <header> <h1>Structures</h1> </header> 
+    <p>  <quote> The structure is user-defined data type in C, which is used to store a collection of different kinds of data.</p>
+  <li>  The structure is something similar to an array; the only difference is array is used to store same data types. </quote> 
+<li> <quote> struct keyword is used to declare the structure in C. </quote> 
+<li> <quote> Variables inside the structure are called members of the structure. </quote> 
+  <p> Defining a structure </p>
+  <p> Syntax: </p>
+  <code> struct structureName 
+    <div>{   </div>
+   <div>//member definitions</div>
+    <div> };  </div></code>
+  Example:
+   
+  <code> <div>struct student </div>
+      <div>{  </div>  
+      <div> char name[20];</div>
+      <div> int age;</div>
+      <div>int grade;</div>
+      <div>  };</div></code>
+  
+  
+  </section>
+  <section class="main-section" id = "Pointers"> <header> <h1>Pointers</h1> </header> 
+    <p>  <quote> A pointer is a variable in C, and pointers value is the address of a memory location. </quote> </p>
+    <li>  <quote> Pointers allow passing of arrays and strings to functions more efficiently. </quote> </li>
+<li> <quote> Pointers make possible to return more than one value from the function. </quote> </li>
+<li> <quote> Pointers reduce the length and complexity of a program. </quote> </li>
+<li> <quote> Pointers increase the processing speed. </quote> </li>
+<li> <quote> Pointers save the memory. </quote> </li>
+    Syntax: 
+    <code>
+      <div>type *variable_name;</div>
+    </code>
+    Example:
+    <code>
+      <div> int  *width;</div>
+      <div>char  *letter;</idv>
+    </code>
+</section>
+  <section class="main-section" id = "Learn_More"> <header> <h1>Learn More</h1> </header> 
+    For more information and if you want to learn C.
+    <a href="https://www.w3schools.in/c-tutorial/"> Please visit this link </a>
+  
+    <p><h5> 
+    Content: Source : <a href="https://www.w3schools.in/c-tutorial/"> W3Schools </a> and 
+    <a href="https://www.geeksforgeeks.org/c-language-set-1-introduction/"> Geeksforgeeks.org </a>
+   </h5></p>
+  </section>
+  
+          
+       </div>
+     </main>
+   
+ 
+     
+     
+        
+  </body>
+       
+<!--    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  
+  
+
+</body>
+
+</html>
